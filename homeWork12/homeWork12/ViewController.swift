@@ -10,7 +10,10 @@ class ViewController: UIViewController {
         //Создайте коллекцию типа [Any], включающую несколько вещественных чисел, целых, строк и булевых значений.  Распечатайте содержимое коллекции.
         
         let collection: [Any] = [0.01, 0.033, 28, 756, "magic", true]
-        print(collection)
+
+        for element in collection {
+            print("Element: \(element), Type: \(type(of: element))")
+        }
         
         //MARK: - task 2
         
